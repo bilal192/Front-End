@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            
+            background: linear-gradient(45deg, #49a09d, #5f2c82);     
+        }
+        input{
+            border-style:double;
+            border-top-color: #49a09d;
+            border-bottom-color: #49a09d;
+            
+        }
+        form{    
+            position: absolute;
+            top: 20%;
+            left: 33%;
+            width: 500px;
+            height: 400px;
+            border-style:inset;
+            background: linear-gradient(45deg, #49a09d, #5f2c82);     
+            background-repeat: round;
+            text-align: center;
+            opacity:;
+         }      
+         button{
+            opacity: 1;
+            background-color: rgb(77, 140, 140);
+            color: #22201d;
+            border: #1e5859;
+            border-style: double;
+            
+         }
+    </style> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+</head>
+<body>
+    <div id="form_sign_up">
+        <center>
+            <form action="submit">
+                <h1 style="color: black;">Sign up</h1> 
+                <img style="width: 60px;" src="assets/sign-up-icon.jpeg" alt="signUpIvon"><br><br>
+                <input type="text" placeholder="First Name" required><br> <br>
+                <input type="text" placeholder="Last Name" required><br> <br>
+                <input type="email" placeholder="Email">
+                <br><br>
+                <input type="password" name="password" id="user_password" placeholder="Password">
+                <br><br>
+                <label for="ageSelctions" style="color:black"> Age</label>
+                <select name="ageSelections" id="age_selections" required>
+                    <option value=""  selected disabled hidden>Select here</option>
+                    <option value="Under 18">Under 18</option>
+                    <option value="18-35">18-35</option>
+                    <option value="35-46">35-46</option>
+                    <option value="46+">46+</option>
+                </select>
+                <br>
+                <input type="checkbox" name="agreeToTheTerms" id="termsAgreement">I Agree To The <a href="test.com">Terms</a>
+                <br><br>
+                <button type="submit">Sign up</button>
+                <button type="reset">Rest</button>
+            </form>
+        </center>
+
+    </div>   
+</body>
+</html>
